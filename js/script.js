@@ -4,15 +4,14 @@ const quoteBtn = document.querySelector('[data-quote-btn]');
 
 
 let quotes = []
-let currentIndex = 0
 
 quoteBtn.addEventListener('click', () => {
-    displayNextQuote()
+    displayRandomQuote()
 })
 
-function displayNextQuote() {
-    currentIndex = (currentIndex + 1) % quotes.length;
-    const quote = quotes[currentIndex];
+function displayRandomQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length)
+    const quote = quotes[randomIndex];
     quoteContainer.innerHTML = `<div>${quote.text}</div>`
     quoteAuthor.innerHTML = `<em>~ ${quote.author}</em>`
 }
@@ -21,5 +20,5 @@ fetch("https://type.fit/api/quotes")
     .then(response => response.json())
     .then((data) => {
         quotes = data
-        displayNextQuote()
+        displayRandomQuote()
     })
