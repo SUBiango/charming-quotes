@@ -1,0 +1,74 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url(/images/app-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quotes-container {
+    background-color: #fff;
+    max-width: 600px;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0 25px 0; 
+}
+
+.quote-icon {
+    max-width: 3em;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.quotes {
+    text-align: center;
+}
+
+.author {
+    margin-top: .5em;
+}
+
+button {
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    padding: .75em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e7e7ee;
+    transition: .4s;
+}
+
+
