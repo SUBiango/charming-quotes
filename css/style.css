@@ -32,7 +32,7 @@ body {
 
 .quotes-container {
     background-color: #fff;
-    max-width: 600px;
+    width: 600px;
     padding: 3em;
     display: flex;
     flex-direction: column;
