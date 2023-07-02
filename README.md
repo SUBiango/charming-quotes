@@ -1,2 +1,2 @@
 # random-quotes-generator
-Random quote generator app
+Just a simple random quotes generator app to practice javascript
